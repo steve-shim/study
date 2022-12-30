@@ -13,6 +13,8 @@
     console.log(dayOfToday)
 
     //TypeScript (비추)
+    //enum에 값을 지정하지 않으면 0부터 시작한다
+    //문자열을 할당할거면 문자열을 하나씩 =로 할당해줘야한다
     enum Days {
         Monday = 1, // 0 
         Tuesday, // 1
@@ -26,7 +28,8 @@
     const day = Days.Saturday;
     console.log(day);
 
-    //enum을 쓰는 대신 union string literal로 대체가능
+    //다른 언어에서는 enum이 매우 유용하지만
+    //Typescript에서는 enum을 쓰는 대신 union string literal로 대체가능
     type DaysOfWeek = 'Monday' | 'Tuesday' | 'Wednesday';
     let dayOfweek: DaysOfWeek = 'Monday';
     dayOfweek = 'Tuesday';

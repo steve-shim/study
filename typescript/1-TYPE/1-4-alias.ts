@@ -1,10 +1,10 @@
 {
     /**
-     * Type Aliases
+     * Type Aliases 새로운 타입을 내가 정의할 수 있다
      */
     type Text = string;
     const name: string = 'steve';
-    const name2: Text = 'steve';
+    const name2: Text = 'shim';
     const address: Text = 'korea';
     type Num = number;
     type Student = {

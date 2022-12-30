@@ -1,5 +1,5 @@
 {
-    //Array 를 정의하는 2가지 방법
+    //Array 를 정의하는 2가지 방법 (Array는 한가지 종류의 타입의 원소의 집합)
     const fruits: string[] = ['사과','바나나'];
     const scores: Array<number> = [1,3,4];
 
@@ -19,7 +19,7 @@
 
     //Object Destructuring
     //사용하는 쪽에서 name이랑 age변수 지정해서 사용할 수는 있다
-    const [name, age] = student;
-    console.log("name",name)
-    console.log("age",age)
+    const [name10, age10] = student;
+    console.log("name",name10)
+    console.log("age",age10)
 }
