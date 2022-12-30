@@ -29,13 +29,14 @@
     // }
 
     //Optional parameter (?)
+    //첫번째 인자는 무조건 string, 두번째 인자는 전달 안하면 undefined
     function printName(firstName:string, lastName?:string){
         console.log(firstName);
-        console.log(lastName);
+        console.log(lastName ?? 'mm');
     }
     printName('steve','shim');
     printName('steve');
-    printName('steve', undefined);
+    //printName('steve', undefined);
 
     //Default parameter
     function printMessage(message: string = 'default message'){
@@ -55,7 +56,7 @@
     console.log(addNumbers(1,2,3,4));
 
     function addNumbersReduce(...numbers: number[]): number {
-        return numbers.reduce((a,b)=>a+b);
+        return numbers.reduce((a,b)=> a+b,10);
     }
     console.log(addNumbersReduce(1,2));
     console.log(addNumbersReduce(1,2,3,4));
